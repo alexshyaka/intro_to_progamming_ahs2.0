@@ -95,6 +95,7 @@ Freda likes to play Starfleet Commander, Ninja Hamsters, Seahorse Adventures."
  
 ### Return:
    The newly created network data structure
+   
 		def create_data_structure(string_input):
     			return network
 
@@ -106,8 +107,8 @@ Freda likes to play Starfleet Commander, Ninja Hamsters, Seahorse Adventures."
 # ------------------------------------------------- 
 
 
- get_connections(network, user): 
-   Returns a list of all the connections that user has
+ 		get_connections(network, user): 
+   		Returns a list of all the connections that user has
 #
  Arguments: 
    network: the gamer network data structure
@@ -117,15 +118,18 @@ Freda likes to play Starfleet Commander, Ninja Hamsters, Seahorse Adventures."
    A list of all connections the user has.
    - If the user has no connections, return an empty list.
    - If the user is not in network, return None.
+   
 		def get_connections(network, user):
 			return []
 
 # ------------------------------------------------- 
- get_games_liked(network, user):    Returns a list of all the games a user likes
- Arguments:    network: the gamer network data structure   user:    a string containing the name of the user
+
+ 		get_games_liked(network, user):    Returns a list of all the games a user likes
+ 		Arguments:    network: the gamer network data structure   user:    a string containing the name of the user
 # 
 ### Return:    
 A list of all games the user likes.   - If the user likes no games, return an empty list.   - If the user is not in network, return None.
+	
 		def get_games_liked(network,user):
     			return []
 
@@ -139,16 +143,17 @@ A list of all games the user likes.   - If the user likes no games, return an em
 #
 ### Return: 
   The updated network with the new connection added.
-  - If a connection already exists from user_A to user_B, return network unchanged.
-  - If user_A or user_B is not in network, return False.
+ 		- If a connection already exists from user_A to user_B, return network unchanged.
+  		- If user_A or user_B is not in network, return False.
+		
 		def add_connection(network, user_A, user_B):
 			return network
 
 # ------------------------------------------------- 
- add_new_user(network, user, games): 
-   Creates a new user profile and adds that user to the network, along with
-   any game preferences specified in games. Assume that the user has no 
-   connections to begin with.
+ 		add_new_user(network, user, games): 
+		   Creates a new user profile and adds that user to the network, along with
+		   any game preferences specified in games. Assume that the user has no 
+		   connections to begin with.
  
  Arguments:
    network: the gamer network data structure
@@ -159,15 +164,16 @@ A list of all games the user likes.   - If the user likes no games, return an em
 ### Return: 
    The updated network with the new user and game preferences added. The new user 
   should have no connections.
-  - If the user already exists in network, return network *UNCHANGED* (do not change
-     the user's game preferences)
+  		- If the user already exists in network, return network *UNCHANGED* (do not change
+     		the user's game preferences)
+		
 		def add_new_user(network, user, games):
     			return network
 		
 # ------------------------------------------------- 
  		get_secondary_connections(network, user): 
-   Finds all the secondary connections (i.e. connections of connections) of a 
-   given user.
+   		Finds all the secondary connections (i.e. connections of connections) of a 
+   		given user.
  
  Arguments: 
    network: the gamer network data structure
@@ -196,14 +202,15 @@ A list of all games the user likes.   - If the user likes no games, return an em
 
 ### Return: 
    The number of connections in common (as an integer).
-   - If user_A or user_B is not in network, return False.
+   		- If user_A or user_B is not in network, return False.
+		
 		def count_common_connections(network, user_A, user_B):
     			return 0
 
 # ------------------------------------------------- 
- find_path_to_friend(network, user_A, user_B): 
-   Finds a connections path from user_A to user_B. It has to be an existing 
-   path but it DOES NOT have to be the shortest path.
+ 		find_path_to_friend(network, user_A, user_B): 
+   		Finds a connections path from user_A to user_B. It has to be an existing 
+   		path but it DOES NOT have to be the shortest path.
    
  Arguments:
    network: The network you created with create_data_structure. 
