@@ -1,9 +1,9 @@
-# Module-0-Introduction to programming
+## Module-0-Introduction to programming
 This is the final challenge for introduction to programming on the AHS
-# --------------------------- #
+### --------------------------- #
 ### Intro to CS Final Project   #
 ### Gaming Social Network       #
-# --------------------------- #
+### --------------------------- #
 
 
 ### Background
