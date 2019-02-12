@@ -95,8 +95,8 @@ Freda likes to play Starfleet Commander, Ninja Hamsters, Seahorse Adventures."
  
 ### Return:
    The newly created network data structure
-def create_data_structure(string_input):
-    return network
+		def create_data_structure(string_input):
+    			return network
 
 # --------------------------------------------------- 
  Note that the first argument to all procedures below is 'network' This is the 
@@ -117,8 +117,8 @@ def create_data_structure(string_input):
    A list of all connections the user has.
    - If the user has no connections, return an empty list.
    - If the user is not in network, return None.
-def get_connections(network, user):
-	return []
+		def get_connections(network, user):
+			return []
 
 # ------------------------------------------------- 
  get_games_liked(network, user):    Returns a list of all the games a user likes
@@ -126,8 +126,8 @@ def get_connections(network, user):
 # 
 ### Return:    
 A list of all games the user likes.   - If the user likes no games, return an empty list.   - If the user is not in network, return None.
-def get_games_liked(network,user):
-    return []
+		def get_games_liked(network,user):
+    			return []
 
 # ------------------------------------------------- 
  add_connection(network, user_A, user_B):    Adds a connection from user_A to user_B. Make sure to check that both users    exist in network.
@@ -141,8 +141,8 @@ def get_games_liked(network,user):
   The updated network with the new connection added.
   - If a connection already exists from user_A to user_B, return network unchanged.
   - If user_A or user_B is not in network, return False.
-def add_connection(network, user_A, user_B):
-	return network
+		def add_connection(network, user_A, user_B):
+			return network
 
 # ------------------------------------------------- 
  add_new_user(network, user, games): 
@@ -161,11 +161,11 @@ def add_connection(network, user_A, user_B):
   should have no connections.
   - If the user already exists in network, return network *UNCHANGED* (do not change
      the user's game preferences)
-def add_new_user(network, user, games):
-    return network
+		def add_new_user(network, user, games):
+    			return network
 		
 # ------------------------------------------------- 
- get_secondary_connections(network, user): 
+ 		get_secondary_connections(network, user): 
    Finds all the secondary connections (i.e. connections of connections) of a 
    given user.
  
@@ -182,8 +182,8 @@ def add_new_user(network, user, games):
   It is OK if a user's list of secondary connections includes the user 
    himself/herself. It is also OK if the list contains a user's primary 
    connection that is a secondary connection as well.
-def get_secondary_connections(network, user):
-	return []
+		def get_secondary_connections(network, user):
+			return []
 
 # ------------------------------------------------- 	
  count_common_connections(network, user_A, user_B): 
@@ -197,8 +197,8 @@ def get_secondary_connections(network, user):
 ### Return: 
    The number of connections in common (as an integer).
    - If user_A or user_B is not in network, return False.
-def count_common_connections(network, user_A, user_B):
-    return 0
+		def count_common_connections(network, user_A, user_B):
+    			return 0
 
 # ------------------------------------------------- 
  find_path_to_friend(network, user_A, user_B): 
@@ -216,8 +216,8 @@ def count_common_connections(network, user_A, user_B):
    - If user_A or user_B is not in network, return None.
 
 ### Sample output:
-   >>> print find_path_to_friend(network, "Abe", "Zed")
-   >>> ['Abe', 'Gel', 'Sam', 'Zed']
+   		>>> print find_path_to_friend(network, "Abe", "Zed")
+   		>>> ['Abe', 'Gel', 'Sam', 'Zed']
    This implies that Abe is connected with Gel, who is connected with Sam, 
    who is connected with Zed.
  
