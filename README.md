@@ -233,11 +233,11 @@ def count_common_connections(network, user_A, user_B):
    may safely add default parameters since all calls used in the grading script 
    will only include the arguments network, user_A, and user_B.
    
-     def find_path_to_friend(network, user_A, user_B):
+   		def find_path_to_friend(network, user_A, user_B):
 
-	 your RECURSIVE solution here!
+			your RECURSIVE solution here!
 	 
-	return None
+			return None
 
 ### Make-Your-Own-Procedure (MYOP)
 # ----------------------------------------------------------------------------- 
