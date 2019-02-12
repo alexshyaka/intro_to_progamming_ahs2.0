@@ -47,7 +47,7 @@ This is the final challenge for introduction to programming on the AHS
  to define any additional helper procedures that can assist you in accomplishing 
  a task. You are encouraged to test your code by using print statements and the 
  Test Run button. 
-# ----------------------------------------------------------------------------- 
+# ------------------------------------------------- 
 
 ### Example string input. Use it to test your code.
 example_input="John is connected to Bryant, Debra, Walter.\
@@ -74,7 +74,7 @@ Robin likes to play Call of Arms, Dwarves and Swords.\
 Freda is connected to Olive, John, Debra.\
 Freda likes to play Starfleet Commander, Ninja Hamsters, Seahorse Adventures."
 
-# ----------------------------------------------------------------------------- 
+# ------------------------------------------------- 
 ### create_data_structure(string_input): 
    Parses a block of text (such as the one above) and stores relevant 
    information into a data structure. You are free to choose and design any 
@@ -98,12 +98,12 @@ Freda likes to play Starfleet Commander, Ninja Hamsters, Seahorse Adventures."
 def create_data_structure(string_input):
     return network
 
-# ----------------------------------------------------------------------------- # 
+# --------------------------------------------------- 
  Note that the first argument to all procedures below is 'network' This is the 
  data structure that you created with your create_data_structure procedure,    
  though it may be modified as you add new users or new connections. Each       
  procedure below will then modify or extract information from 'network'         
-# ----------------------------------------------------------------------------- 
+# ------------------------------------------------- 
 
 
  get_connections(network, user): 
@@ -120,7 +120,7 @@ def create_data_structure(string_input):
 def get_connections(network, user):
 	return []
 
-# ----------------------------------------------------------------------------- 
+# ------------------------------------------------- 
  get_games_liked(network, user):    Returns a list of all the games a user likes
  Arguments:    network: the gamer network data structure   user:    a string containing the name of the user
 # 
@@ -129,7 +129,7 @@ A list of all games the user likes.   - If the user likes no games, return an em
 def get_games_liked(network,user):
     return []
 
-# ----------------------------------------------------------------------------- 
+# ------------------------------------------------- 
  add_connection(network, user_A, user_B):    Adds a connection from user_A to user_B. Make sure to check that both users    exist in network.
 # 
  Arguments: 
@@ -144,7 +144,7 @@ def get_games_liked(network,user):
 def add_connection(network, user_A, user_B):
 	return network
 
-# ----------------------------------------------------------------------------- 
+# ------------------------------------------------- 
  add_new_user(network, user, games): 
    Creates a new user profile and adds that user to the network, along with
    any game preferences specified in games. Assume that the user has no 
@@ -164,7 +164,7 @@ def add_connection(network, user_A, user_B):
 def add_new_user(network, user, games):
     return network
 		
-# ----------------------------------------------------------------------------- 
+# ------------------------------------------------- 
  get_secondary_connections(network, user): 
    Finds all the secondary connections (i.e. connections of connections) of a 
    given user.
@@ -185,7 +185,7 @@ def add_new_user(network, user, games):
 def get_secondary_connections(network, user):
 	return []
 
-# ----------------------------------------------------------------------------- 	
+# ------------------------------------------------- 	
  count_common_connections(network, user_A, user_B): 
    Finds the number of people that user_A and user_B have in common.
   
@@ -200,7 +200,7 @@ def get_secondary_connections(network, user):
 def count_common_connections(network, user_A, user_B):
     return 0
 
-# ----------------------------------------------------------------------------- 
+# ------------------------------------------------- 
  find_path_to_friend(network, user_A, user_B): 
    Finds a connections path from user_A to user_B. It has to be an existing 
    path but it DOES NOT have to be the shortest path.
@@ -240,7 +240,7 @@ def count_common_connections(network, user_A, user_B):
 			return None
 
 ### Make-Your-Own-Procedure (MYOP)
-# ----------------------------------------------------------------------------- 
+# --------------------------------
  Your MYOP should either perform some manipulation of your network data 
  structure (like add_new_user) or it should perform some valuable analysis of 
  your network (like path_to_friend). Don't forget to comment your MYOP. You 
