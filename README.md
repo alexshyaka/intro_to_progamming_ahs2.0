@@ -1,12 +1,12 @@
 # Module-0-Introduction to programming
 This is the final challenge for introduction to programming on the AHS
 # --------------------------- #
-## Intro to CS Final Project   #
-## Gaming Social Network       #
+### Intro to CS Final Project   #
+### Gaming Social Network       #
 # --------------------------- #
 
 
-## Background
+### Background
 # ==========
  You and your friend have decided to start a company that hosts a gaming
  social network site. Your friend will handle the website creation (they know 
@@ -20,7 +20,7 @@ This is the final challenge for introduction to programming on the AHS
  
  <user> is connected to <user1>, ..., <userM>.<user> likes to play <game1>, ..., <gameN>.
 
-## For example:
+### For example:
  
  John is connected to Bryant, Debra, Walter.John likes to play The Movie: The Game, The Legend of Corgi, Dinosaur Diner.
  
@@ -40,7 +40,7 @@ This is the final challenge for introduction to programming on the AHS
  symmetric - if 'Bob' is connected to 'Alice', it does not mean that 'Alice' is
  connected to 'Bob'.
 
-## Project Description
+### Project Description
  ====================
  Your task is to complete the procedures according to the specifications below
  as well as to implement a Make-Your-Own procedure (MYOP). You are encouraged 
@@ -49,7 +49,7 @@ This is the final challenge for introduction to programming on the AHS
  Test Run button. 
 # ----------------------------------------------------------------------------- 
 
-# Example string input. Use it to test your code.
+### Example string input. Use it to test your code.
 example_input="John is connected to Bryant, Debra, Walter.\
 John likes to play The Movie: The Game, The Legend of Corgi, Dinosaur Diner.\
 Bryant is connected to Olive, Ollie, Freda, Mercedes.\
@@ -99,13 +99,13 @@ def create_data_structure(string_input):
     return network
 
 # ----------------------------------------------------------------------------- # 
- Note that the first argument to all procedures below is 'network' This is the #
- data structure that you created with your create_data_structure procedure,    #
- though it may be modified as you add new users or new connections. Each       #
- procedure below will then modify or extract information from 'network'        # 
-# ----------------------------------------------------------------------------- #
-
+ Note that the first argument to all procedures below is 'network' This is the 
+ data structure that you created with your create_data_structure procedure,    
+ though it may be modified as you add new users or new connections. Each       
+ procedure below will then modify or extract information from 'network'         
 # ----------------------------------------------------------------------------- 
+
+
  get_connections(network, user): 
    Returns a list of all the connections that user has
 #
@@ -232,8 +232,9 @@ def count_common_connections(network, user_A, user_B):
    in this procedure to keep track of nodes already visited in your search. You 
    may safely add default parameters since all calls used in the grading script 
    will only include the arguments network, user_A, and user_B.
+   
 def find_path_to_friend(network, user_A, user_B):
-	# your RECURSIVE solution here!
+	 your RECURSIVE solution here!
 	return None
 
 ### Make-Your-Own-Procedure (MYOP)
