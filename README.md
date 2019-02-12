@@ -249,14 +249,14 @@ def count_common_connections(network, user_A, user_B):
  Replace this with your own procedure! You can also uncomment the lines below
  to see how your code behaves. Have fun!
 
-net = create_data_structure(example_input)
-print net
-print get_connections(net, "Debra")
-print get_connections(net, "Mercedes")
-print get_games_liked(net, "John")
-print add_connection(net, "John", "Freda")
-print add_new_user(net, "Debra", []) 
-print add_new_user(net, "Nick", ["Seven Schemers", "The Movie: The Game"]) # True
-print get_secondary_connections(net, "Mercedes")
-print count_common_connections(net, "Mercedes", "John")
-print find_path_to_friend(net, "John", "Ollie")
+		net = create_data_structure(example_input)
+		print net
+		print get_connections(net, "Debra")
+		print get_connections(net, "Mercedes")
+		print get_games_liked(net, "John")
+		print add_connection(net, "John", "Freda")
+		print add_new_user(net, "Debra", []) 
+		print add_new_user(net, "Nick", ["Seven Schemers", "The Movie: The Game"]) # True
+		print get_secondary_connections(net, "Mercedes")
+		print count_common_connections(net, "Mercedes", "John")
+		print find_path_to_friend(net, "John", "Ollie")
